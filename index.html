@@ -68,7 +68,6 @@
             </div>
             
             <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
-                <a href="#about" class="hover:text-brand-800 transition-colors">About</a>
                 <a href="#pillars" class="hover:text-brand-800 transition-colors">Strategic Pillars</a>
                 <a href="#projects" class="hover:text-brand-800 transition-colors">Project Showcase</a>
                 <a href="#faith-science" class="hover:text-brand-800 transition-colors">Faith & Science</a>
@@ -94,12 +93,26 @@
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(212,175,55,0.1),transparent_50%)]"></div>
         
         <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center relative z-10">
+            <!-- Left Hero Content Column with integrated headshot -->
             <div class="lg:col-span-7 space-y-6 text-left">
-                <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-100 text-xs font-semibold uppercase tracking-wider mb-2">
-                    <i class="fa-solid fa-shield-halved text-brand-100"></i> Sustained EdTech & STEM Innovation
-                </span>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-6">
+                    <!-- HEADSHOT PLACEHOLDER: Replace this placeholder URL with your actual headshot image filename (e.g., "headshot.jpg" placed inside your GitHub repo) -->
+                    <div class="relative group shrink-0">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-brand-500 to-accent-gold rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+                        <img src="https://placehold.co/150x150/14532d/ffffff?text=Jen+Marisi" alt="Jen Marisi" onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=JM'" class="relative w-24 h-24 sm:w-28 sm:h-28 object-cover rounded-2xl border-2 border-white/20 shadow-xl">
+                    </div>
+                    <div>
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-100 text-xs font-semibold uppercase tracking-wider mb-2">
+                            <i class="fa-solid fa-shield-halved text-brand-100"></i> Sustained EdTech & STEM Innovation
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight serif-title text-white">
+                            Jennifer C. Marisi
+                        </h2>
+                        <p class="text-xs text-brand-200 font-semibold tracking-wider uppercase mt-1">MSA-CESS Commissioner & Global Collaborator</p>
+                    </div>
+                </div>
                 
-                <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight serif-title">
+                <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight serif-title">
                     Designing Human-Centered <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-200 via-emerald-300 to-accent-gold">STEM Learning</span> Ecosystems
                 </h2>
                 
@@ -290,6 +303,12 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Case Study 1: RAIL Endorsement -->
                 <div class="project-card bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm flex flex-col justify-between" data-category="governance">
+                    <!-- SCHOOL WORK IMAGE SPACE -->
+                    <div class="h-48 w-full overflow-hidden bg-slate-100 relative border-b border-stone-100">
+                        <!-- REPLACE IMAGE SOURCE: Change with an actual school work image URL, e.g., "school_rail.jpg" -->
+                        <img src="https://placehold.co/600x400/0f172a/ffffff?text=St.+Peter+School+RAIL+Work" alt="St. Peter School - RAIL Endorsement Work" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
                     <div class="p-8">
                         <div class="flex justify-between items-start mb-4">
                             <span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 text-xs font-bold rounded-md">Policy & Compliance</span>
@@ -308,6 +327,12 @@
 
                 <!-- Case Study 2: Water! Guide SSEC -->
                 <div class="project-card bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm flex flex-col justify-between" data-category="curriculum">
+                    <!-- SMITHSONIAN / GLOBAL SCIENCE IMAGE SPACE -->
+                    <div class="h-48 w-full overflow-hidden bg-slate-100 relative border-b border-stone-100">
+                        <!-- REPLACE IMAGE SOURCE: Change with an actual SSEC science design image, e.g., "ssec_water.jpg" -->
+                        <img src="https://placehold.co/600x400/166534/ffffff?text=Smithsonian+SSEC+Water+Guide" alt="Smithsonian SSEC Water Guide Collaboration" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
                     <div class="p-8">
                         <div class="flex justify-between items-start mb-4">
                             <span class="px-2.5 py-1 bg-blue-50 text-blue-800 text-xs font-bold rounded-md">Global Curriculum</span>
@@ -362,6 +387,12 @@
 
                 <!-- Case Study 5: JCC Medford Camps -->
                 <div class="project-card bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm flex flex-col justify-between" data-category="lab">
+                    <!-- CAMP STEM / INCLUSION IMAGE SPACE -->
+                    <div class="h-48 w-full overflow-hidden bg-slate-100 relative border-b border-stone-100">
+                        <!-- REPLACE IMAGE SOURCE: Change with an actual JCC camp image, e.g., "jcc_medford_camp.jpg" -->
+                        <img src="https://placehold.co/600x400/D4AF37/0f172a?text=JCC+Medford+Camps+STEM" alt="JCC Medford Camps Inclusive STEM Program" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
                     <div class="p-8">
                         <div class="flex justify-between items-start mb-4">
                             <span class="px-2.5 py-1 bg-amber-50 text-amber-800 text-xs font-bold rounded-md">Inclusive STEM</span>
@@ -740,7 +771,7 @@
                         Need a speaker, curriculum design consultant, accredited compliance reviewer, or system auditor? Connect to map out customized opportunities for your community.
                     </p>
                     <div class="mt-8 flex gap-4">
-                        <a href="https://twitter.com/JenMarisi" target="_blank" class="h-10 w-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center text-stone-300 transition-all"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/jenmarisi" target="_blank" class="h-10 w-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center text-stone-300 transition-all"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://www.youtube.com/channel/UCq7K6d0en7Un9-V-ED5yHkQ" target="_blank" class="h-10 w-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center text-stone-300 transition-all"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
@@ -769,7 +800,7 @@
                         <ul class="space-y-2 text-xs text-stone-400">
                             <li>Middle States Commission (CESS Member)</li>
                             <li>Smithsonian Science Education Center (SSEC)</li>
-                            <li>Vatican Observatory Foundation Fellow (ACME)</li>
+                            <li>Roger and Jane Davis JCC Camps at Medford</li>
                             <li>St. Peter School Merchantville</li>
                         </ul>
                     </div>
