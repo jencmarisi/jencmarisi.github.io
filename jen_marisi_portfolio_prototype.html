@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jen Marisi | EdTech Leader & STEM Innovator</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            500: '#16a34a',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        accent: {
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            slate: '#1e293b',
+                            charcoal: '#0f172a',
+                            cream: '#fdfbf7'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom print-styles to make a clean resume */
+        @media print {
+            .no-print { display: none !important; }
+            .print-only { display: block !important; }
+            body { background: white; color: black; }
+        }
+    </style>
+</head>
+<body class="bg-[#fafaf9] text-slate-900 selection:bg-brand-100 selection:text-brand-900 min-h-screen flex flex-col">
+
+    <!-- Header & Navigation -->
+    <header class="no-print sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="h-11 w-11 bg-brand-800 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-brand-800/20">
+                    JM
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-slate-900 tracking-tight leading-none">Jen Marisi</h1>
+                    <p class="text-xs text-brand-800 font-semibold tracking-wider uppercase mt-1">EdTech & STEM Leader</p>
+                </div>
+            </div>
+            
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-brand-800 transition-colors">About</a>
+                <a href="#pillars" class="hover:text-brand-800 transition-colors">Strategic Pillars</a>
+                <a href="#projects" class="hover:text-brand-800 transition-colors">Project Showcase</a>
+                <a href="#faith-science" class="hover:text-brand-800 transition-colors">Faith & Science</a>
+                <a href="#achievements" class="hover:text-brand-800 transition-colors">Credentials</a>
+                <a href="#workshops" class="hover:text-brand-800 transition-colors">PD Planner</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <button onclick="window.print()" class="hidden sm:inline-flex items-center gap-2 border border-stone-200 hover:bg-stone-50 px-4 py-2 rounded-lg text-xs font-semibold text-slate-700 transition-all">
+                    <i class="fa-solid fa-print"></i> Print Portfolio CV
+                </button>
+                <a href="#contact" class="bg-brand-800 hover:bg-brand-900 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-md shadow-brand-800/10">
+                    Collaborate
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Interactive Hero Section -->
+    <section id="about" class="no-print relative bg-gradient-to-br from-accent-charcoal via-slate-900 to-brand-900 text-white overflow-hidden py-24 px-6">
+        <!-- Background Decorative Elements -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(22,101,52,0.18),transparent_50%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(212,175,55,0.1),transparent_50%)]"></div>
+        
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 space-y-6 text-left">
+                <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-100 text-xs font-semibold uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-shield-halved text-brand-100"></i> Sustained EdTech & STEM Innovation
+                </span>
+                
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight serif-title">
+                    Designing Human-Centered <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-200 via-emerald-300 to-accent-gold">STEM Learning</span> Ecosystems
+                </h2>
+                
+                <p class="text-lg text-stone-300 max-w-2xl leading-relaxed">
+                    Over 20 years of experience building programs, partnerships, and scholarship at the crossroads of science and learning. I work as an MSA-CESS Commissioner, Google-invited AI Educator, and Smithsonian SSEC curriculum co-creator.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#workshops" class="bg-brand-800 hover:bg-brand-900 px-6 py-3 rounded-xl text-sm font-bold tracking-wide transition-all shadow-lg shadow-brand-800/20">
+                        <i class="fa-solid fa-sliders mr-2"></i> Configure a Custom Workshop
+                    </a>
+                    <a href="#projects" class="bg-white/10 hover:bg-white/15 border border-white/20 px-6 py-3 rounded-xl text-sm font-bold tracking-wide transition-all">
+                        View Research & Projects
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dynamic Persona Switcher Container -->
+            <div class="lg:col-span-5 bg-white/5 backdrop-blur-md p-2 rounded-2xl border border-white/15 shadow-2xl">
+                <div class="grid grid-cols-3 gap-1">
+                    <button onclick="switchHeroTab('leader')" id="hero-btn-leader" class="hero-tab-btn active bg-brand-800 text-white px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all">
+                        The Leader
+                    </button>
+                    <button onclick="switchHeroTab('researcher')" id="hero-btn-researcher" class="hero-tab-btn text-slate-300 hover:text-white px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all">
+                        The Scholar
+                    </button>
+                    <button onclick="switchHeroTab('practitioner')" id="hero-btn-practitioner" class="hero-tab-btn text-slate-300 hover:text-white px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all">
+                        The Practitioner
+                    </button>
+                </div>
+                
+                <!-- Persona Contents -->
+                <div class="p-6 text-left space-y-4 min-h-[220px] flex flex-col justify-between">
+                    <div id="hero-content-leader" class="hero-content-panel block animate-fade-in">
+                        <p class="text-stone-200 text-sm sm:text-base leading-relaxed">
+                            <strong>Accreditation Commissioner:</strong> Nominated and appointed to the <em>Middle States Association Commission on Elementary and Secondary Schools (MSA-CESS)</em>. Leading regional quality review, strategic policy, and organizational compliance.
+                        </p>
+                        <div class="mt-4 flex items-center gap-2 text-xs text-accent-gold font-semibold">
+                            <i class="fa-solid fa-circle-check"></i> Actively Steering K-12 Accreditations
+                        </div>
+                    </div>
+                    <div id="hero-content-researcher" class="hero-content-panel hidden">
+                        <p class="text-stone-200 text-sm sm:text-base leading-relaxed">
+                            <strong>Smithsonian SSEC Co-Creator & NARST Scholar:</strong> Translating deep socio-scientific research into published, globally deployed curricula. Collaborating to map student pathways for emergent sustainable development thinking.
+                        </p>
+                        <div class="mt-4 flex items-center gap-2 text-xs text-brand-200 font-semibold">
+                            <i class="fa-solid fa-circle-check"></i> Published SSEC Author (Anticipated Oct 2026)
+                        </div>
+                    </div>
+                    <div id="hero-content-practitioner" class="hero-content-panel hidden">
+                        <p class="text-stone-200 text-sm sm:text-base leading-relaxed">
+                            <strong>STEM Village & Lab Creator:</strong> Built Pre-K through 8th technology frameworks from scratch. Executing high-impact eCLOSE biomedical programs on diabetic models, and managing STEM systems serving 1,600 campers annually.
+                        </p>
+                        <div class="mt-4 flex items-center gap-2 text-xs text-emerald-300 font-semibold">
+                            <i class="fa-solid fa-circle-check"></i> eCLOSE Class2Lab Grant Winner
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Highlights Metric Strip -->
+    <section class="no-print bg-white border-b border-stone-200 py-10 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="border-r border-stone-100 last:border-r-0">
+                <div class="text-4xl font-extrabold text-brand-900 serif-title">20+ Years</div>
+                <div class="text-xs text-slate-500 uppercase tracking-widest font-semibold mt-2">Classroom & Leadership</div>
+            </div>
+            <div class="border-r border-stone-100 last:border-r-0">
+                <div class="text-4xl font-extrabold text-brand-900 serif-title">3x SSEC</div>
+                <div class="text-xs text-slate-500 uppercase tracking-widest font-semibold mt-2">Smithsonian Collaborations</div>
+            </div>
+            <div class="border-r border-stone-100 last:border-r-0">
+                <div class="text-4xl font-extrabold text-brand-900 serif-title">1,600+</div>
+                <div class="text-xs text-slate-500 uppercase tracking-widest font-semibold mt-2">Campers Managed Annually</div>
+            </div>
+            <div>
+                <div class="text-4xl font-extrabold text-brand-900 serif-title">RAIL '27</div>
+                <div class="text-xs text-slate-500 uppercase tracking-widest font-semibold mt-2">AI Governance Integration</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Pillars Section -->
+    <section id="pillars" class="no-print py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-brand-800 text-xs font-bold uppercase tracking-widest">Architect of Modern Classrooms</span>
+            <h3 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight mt-2 serif-title">The Four Pillars of My Mission</h3>
+            <p class="text-slate-500 mt-4 text-sm sm:text-base leading-relaxed">
+                Rather than treating EdTech as a classroom novelty, my work addresses technology and science as foundational pillars for deep societal engagement, school governance, and individual empowerment.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Pillar 1: Institutional Governance -->
+            <div class="bg-white p-8 rounded-2xl border border-stone-200/80 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between">
+                <div>
+                    <div class="h-12 w-12 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-brand-800 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Institutional Governance & Policy</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Serving as an appointed <strong>MSA-CESS Accreditation Commissioner</strong>. Designing system-wide frameworks like the Responsible AI in Learning (RAIL) Endorsement for regional institutions, and ensuring modern compliance models (CIPA, data security).
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="text-xs font-medium px-2.5 py-1 bg-stone-100 text-slate-700 rounded-md">Middle States Commission</span>
+                    <span class="text-xs font-medium px-2.5 py-1 bg-stone-100 text-slate-700 rounded-md">AI Policy (RAIL)</span>
+                    <span class="text-xs font-medium px-2.5 py-1 bg-stone-100 text-slate-700 rounded-md">Quality Review</span>
+                </div>
+            </div>
+
+            <!-- Pillar 2: Research & Global Curriculum -->
+            <div class="bg-white p-8 rounded-2xl border border-stone-200/80 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between">
+                <div>
+                    <div class="h-12 w-12 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-brand-800 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Global Curriculum Co-Creation</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Sustained contributor to the **Smithsonian Science Education Center (SSEC)**. Co-created, reviewed, and field-tested globally distributed curriculum resources (including the *Water!* guide) to cultivate emergent, socio-scientific issue-based systems thinking.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="text-xs font-medium px-2.5 py-1 bg-stone-100 text-slate-700 rounded-md">SSEC Ambassador</span>
+                    <span class="text-xs font-medium px-2.5 py-1 bg-stone-100 text-slate-700 rounded-md">Socio-Scientific Issues</span>
+                    <span class="text-xs font-medium px-2.5 py-1 bg-stone-100 text-slate-700 rounded-md">NARST Contributor</span>
+                </div>
+            </div>
+
+            <!-- Pillar 3: Authentic STEM Practice -->
+            <div class="bg-white p-8 rounded-2xl border border-stone-200/80 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between">
+                <div>
+                    <div class="h-12 w-12 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-brand-800 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-vial"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Empathy-Driven STEM Design</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Bridging classroom work with empirical scientific discoveries. Guiding 8th-grade student scientists through original biomedical pathways utilizing **eCLOSE Institute Class2Lab** models to study diabetic genetic markers.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="text-xs font-medium px-2.5 py-1 bg-stone-100 text-slate-700 rounded-md">eCLOSE Biomarker Lab</span>
+                    <span class="text-xs font-medium px-2.5 py-1 bg-stone-100 text-slate-700 rounded-md">Maker Programs</span>
+                    <span class="text-xs font-medium px-2.5 py-1 bg-stone-100 text-slate-700 rounded-md">Hands-On Inquiry</span>
+                </div>
+            </div>
+
+            <!-- Pillar 4: Public Advocacy & Communities -->
+            <div class="bg-white p-8 rounded-2xl border border-stone-200/80 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between">
+                <div>
+                    <div class="h-12 w-12 rounded-xl bg-brand-50 text-brand-800 flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-brand-800 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Community Advocacy & Training</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Bridging high-tech digital citizenship and local home lives. Running parents workshops as a **Digital Navigator** (All4Ed), bringing clarity to parental controls, home AI guidelines, and safe tech strategies for everyday families.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="text-xs font-medium px-2.5 py-1 bg-stone-100 text-slate-700 rounded-md">Digital Navigator</span>
+                    <span class="text-xs font-medium px-2.5 py-1 bg-stone-100 text-slate-700 rounded-md">Parent Partnerships</span>
+                    <span class="text-xs font-medium px-2.5 py-1 bg-stone-100 text-slate-700 rounded-md">Workshops Series</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Project Showcase Section -->
+    <section id="projects" class="no-print py-20 bg-[#f7f5f2] border-t border-b border-stone-200 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brand-800 text-xs font-bold uppercase tracking-widest">Selected Works & Case Studies</span>
+                    <h3 class="text-3xl font-bold text-slate-900 mt-2 serif-title">Strategic Projects Portfolio</h3>
+                </div>
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-2 mt-6 md:mt-0">
+                    <button onclick="filterProjects('all')" id="filter-btn-all" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-brand-800 text-white transition-all">All Projects</button>
+                    <button onclick="filterProjects('governance')" id="filter-btn-governance" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 border border-stone-200 hover:bg-stone-50 transition-all">Governance</button>
+                    <button onclick="filterProjects('curriculum')" id="filter-btn-curriculum" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 border border-stone-200 hover:bg-stone-50 transition-all">Curriculum Design</button>
+                    <button onclick="filterProjects('lab')" id="project-filter-btn-lab" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 border border-stone-200 hover:bg-stone-50 transition-all">STEM Lab & Camps</button>
+                </div>
+            </div>
+
+            <!-- Project Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Case Study 1: RAIL Endorsement -->
+                <div class="project-card bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm flex flex-col justify-between" data-category="governance">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 text-xs font-bold rounded-md">Policy & Compliance</span>
+                            <span class="text-xs text-stone-500 font-medium">St. Peter School</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Responsible AI in Learning (RAIL) Endorsement</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Pioneered institutional efforts to acquire the RAIL Endorsement through the Middle States Association. Spearheading comprehensive board-level policies, digital safety protocols, and parent workshops. Full endorsement projected for 2027.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-stone-50 border-t border-stone-100 text-xs font-semibold text-brand-800 flex items-center justify-between">
+                        <span>Project Status: Projected '27</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Case Study 2: Water! Guide SSEC -->
+                <div class="project-card bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm flex flex-col justify-between" data-category="curriculum">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-2.5 py-1 bg-blue-50 text-blue-800 text-xs font-bold rounded-md">Global Curriculum</span>
+                            <span class="text-xs text-stone-500 font-medium">Smithsonian SSEC</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Smithsonian Global Goals: Water! Curriculum Guide</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Collaborated alongside international scientists and educators to design, field test, and refine the global *Water!* science guide, building student frameworks to dissect complex socio-scientific water issues.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-stone-50 border-t border-stone-100 text-xs font-semibold text-brand-800 flex items-center justify-between">
+                        <span>Anticipated Release: Oct 2026</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Case Study 3: eCLOSE Class2Lab -->
+                <div class="project-card bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm flex flex-col justify-between" data-category="lab">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 text-xs font-bold rounded-md">Biomedical Lab</span>
+                            <span class="text-xs text-stone-500 font-medium">eCLOSE Grant</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Class2Lab: Biomedical Diabetic Research</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Bridges high-level clinical medicine with K-8 classrooms. Guided eighth-grade students in original, structured genetics investigations exploring the phenotypic and physiological effects of diet on genetically mutated diabetic fruit flies.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-stone-50 border-t border-stone-100 text-xs font-semibold text-brand-800 flex items-center justify-between">
+                        <span>Grant Completed: 2025-2026</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Case Study 4: STEM @ Camp Guidebook -->
+                <div class="project-card bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm flex flex-col justify-between" data-category="lab">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-2.5 py-1 bg-purple-50 text-purple-800 text-xs font-bold rounded-md">Systems Design</span>
+                            <span class="text-xs text-stone-500 font-medium">Crater Park, LLC</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">The STEM @ Camp Guidebook Creator</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Authored an exhaustive, programmatic guidebook widely deployed across the Jewish Day Camp Network. Architected scalable systems for summer science modules, keeping camps equipped and educators coached.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-stone-50 border-t border-stone-100 text-xs font-semibold text-brand-800 flex items-center justify-between">
+                        <span>Resource Library Integration</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Case Study 5: JCC Medford Camps -->
+                <div class="project-card bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm flex flex-col justify-between" data-category="lab">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-2.5 py-1 bg-amber-50 text-amber-800 text-xs font-bold rounded-md">Inclusive STEM</span>
+                            <span class="text-xs text-stone-500 font-medium">JCC Medford</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Inclusive Camps STEM Administration</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Built from scratch a summer-long STEM program serving over 1,600 campers and leading a staff of 10+ educators. Championed inclusivity by integrating adult special needs job training into direct camp STEM management roles.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-stone-50 border-t border-stone-100 text-xs font-semibold text-brand-800 flex items-center justify-between">
+                        <span>Sustained: 2005 - Present</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Case Study 6: SAMR Classroom Integration -->
+                <div class="project-card bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm flex flex-col justify-between" data-category="governance">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-2.5 py-1 bg-teal-50 text-teal-800 text-xs font-bold rounded-md">Integration Tech</span>
+                            <span class="text-xs text-stone-500 font-medium">St. Peter School</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">School-wide SAMR Curriculum Re-alignment</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Redesigned technology curriculums from Pre-K to 8th grade. Evaluated and trained 20+ classroom teachers in high-level Google Workspace models to push beyond passive digital consumption into student creation.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-stone-50 border-t border-stone-100 text-xs font-semibold text-brand-800 flex items-center justify-between">
+                        <span>Completed Strategy Hub</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faith, Science & Spiritual Integration Spotlight -->
+    <section id="faith-science" class="no-print py-24 px-6 bg-stone-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(212,175,55,0.08),transparent_40%)]"></div>
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-6 space-y-6">
+                <span class="inline-flex items-center gap-2 px-3 py-1 bg-accent-gold/20 border border-accent-gold/40 text-accent-goldLight text-xs font-semibold uppercase tracking-wider rounded-md">
+                    <i class="fa-solid fa-star-and-crescent text-accent-gold"></i> The Faith-Science Intersection
+                </span>
+                <h3 class="text-3xl sm:text-4xl font-bold serif-title leading-tight">Cosmic Curiosity & Spiritual Discovery</h3>
+                <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
+                    My work is guided by the core belief that scientific innovation and spiritual truth don’t just coexist—they enrich each other. As a **Vatican Observatory Foundation Fellow**, I explore astronomy as an acts of pastoral curiosity.
+                </p>
+                <p class="text-stone-400 text-xs sm:text-sm">
+                    This dual focus drives my leadership candidate training through the Camden Diocese **A.R.I.S.E. Leadership Prep Program**, ensuring academic rigor is paired with robust Catholic mission principles.
+                </p>
+
+                <!-- Audio highlight play option -->
+                <div class="bg-white/5 border border-white/10 rounded-xl p-5 flex items-start gap-4">
+                    <div class="h-10 w-10 bg-brand-800 rounded-full flex items-center justify-center text-white shrink-0"><i class="fa-solid fa-microphone"></i></div>
+                    <div>
+                        <h4 class="font-bold text-sm">Talking Catholic Podcast Featured Guest (2026)</h4>
+                        <p class="text-xs text-stone-400 mt-1">"A captivating discussion on Vatican astronomy, student engagement, and fostering divine curiosity inside K-8 science programs."</p>
+                        <a href="https://soundcloud.com/talkingcatholic" target="_blank" class="inline-flex items-center gap-1.5 text-xs text-accent-gold hover:underline font-semibold mt-2">
+                            Listen to Episode <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vatican Observatory visual / graphic placeholder card -->
+            <div class="lg:col-span-6 bg-gradient-to-b from-white/10 to-white/5 border border-white/10 rounded-2xl p-8 relative overflow-hidden flex flex-col justify-between min-h-[350px]">
+                <div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-mono text-accent-gold font-bold">VATICAN OBSERVATORY ACME</span>
+                        <span class="text-[10px] bg-brand-800 text-white px-2.5 py-0.5 rounded-full font-bold">FELLOW</span>
+                    </div>
+                    <h4 class="text-2xl font-bold mt-6 serif-title text-stone-100">Astronomy for Catholics in Ministry and Education</h4>
+                    <p class="text-stone-300 text-sm mt-3 leading-relaxed">
+                        Selected as fellowship scholar for intensive study in Tucson, Arizona. Exploring systemic curriculum designs that introduce astrophysics and observational cosmology into general secondary education frameworks.
+                    </p>
+                </div>
+                
+                <div class="border-t border-white/10 pt-6 mt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <div class="text-xs">
+                        <span class="text-stone-500 block">Sponsoring Institution</span>
+                        <span class="text-stone-200 font-semibold">Vatican Observatory Foundation</span>
+                    </div>
+                    <div class="text-xs">
+                        <span class="text-stone-500 block">Focus Areas</span>
+                        <span class="text-stone-200 font-semibold">Astrophysics, Pastoral Science</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive PD Module Builder Section -->
+    <section id="workshops" class="no-print py-24 px-6 bg-[#fdfdfc] border-b border-stone-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-800 text-xs font-bold uppercase tracking-widest">Interactive Administrator Tool</span>
+                <h3 class="text-3xl font-bold text-slate-900 mt-2 serif-title">Design a Professional Development Module</h3>
+                <p class="text-slate-500 text-sm sm:text-base mt-3">
+                    Are you a school administrator, board member, or director? Use this interactive planner tool to instantly generate a custom PD outline customized to your staff or parents community.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12 bg-stone-50 rounded-3xl p-8 lg:p-12 border border-stone-200/80">
+                <!-- Inputs Section (Left 6 Cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">1. Who is the target audience?</label>
+                        <select id="pd-audience" onchange="generatePDProposal()" class="w-full bg-white border border-stone-200 rounded-xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-brand-800 outline-none transition-all">
+                            <option value="faculty">Faculty & Classroom Educators</option>
+                            <option value="parents">Parents & Community Families</option>
+                            <option value="leadership">School Boards & Administrators</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">2. Choose the core workshop focus</label>
+                        <select id="pd-focus" onchange="generatePDProposal()" class="w-full bg-white border border-stone-200 rounded-xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-brand-800 outline-none transition-all">
+                            <option value="ai-literacy">AI Ethics & Digital Literacy (RAIL Approach)</option>
+                            <option value="samr-model">SAMR Technology Integration Models</option>
+                            <option value="google-bootcamp">Google Educator Prep Bootcamp (L1 & L2)</option>
+                            <option value="science-global">Socio-Scientific Issues (SSEC Water Guide)</option>
+                            <option value="digital-safety">Parental Tech Controls & Home Environments</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">3. Session length / Format</label>
+                        <div class="grid grid-cols-3 gap-2">
+                            <button onclick="setLength('half-day')" id="length-btn-half" class="length-btn bg-brand-800 text-white p-3 rounded-xl text-xs font-bold transition-all shadow-sm">Half Day</button>
+                            <button onclick="setLength('full-day')" id="length-btn-full" class="length-btn bg-white border border-stone-200 hover:bg-stone-100 p-3 rounded-xl text-xs font-bold transition-all">Full Day</button>
+                            <button onclick="setLength('multi-day')" id="length-btn-multi" class="length-btn bg-white border border-stone-200 hover:bg-stone-100 p-3 rounded-xl text-xs font-bold transition-all">Multi-Day</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Outputs Box (Right 6 Cols) -->
+                <div class="lg:col-span-6 flex flex-col justify-between bg-white rounded-2xl border border-stone-200 p-8 shadow-sm">
+                    <div>
+                        <div class="flex justify-between items-center border-b border-stone-100 pb-4">
+                            <span class="text-xs font-bold uppercase text-brand-800 tracking-wider">Dynamic Proposal Blueprint</span>
+                            <span class="text-[10px] bg-emerald-50 text-emerald-800 px-2 py-0.5 rounded font-mono font-bold uppercase">Ready to Book</span>
+                        </div>
+                        
+                        <div class="mt-6 space-y-4">
+                            <h4 id="proposal-title" class="text-xl font-extrabold text-slate-900 leading-snug serif-title">Responsible AI Literacy for Faculty Networks</h4>
+                            <p id="proposal-desc" class="text-slate-600 text-sm leading-relaxed">
+                                Establish board-level AI policy compliance, draft classroom-level ethical frameworks (RAIL), and lead school systems toward highly productive student exploration.
+                            </p>
+                            
+                            <div class="bg-stone-50 p-4 rounded-xl space-y-2 text-xs font-medium text-slate-700">
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Target Community:</span>
+                                    <span id="proposal-target" class="font-bold text-slate-900">Faculty & Classroom Educators</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Duration format:</span>
+                                    <span id="proposal-duration" class="font-bold text-slate-900">Half Day Interactive Session</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Sponsoring Framework:</span>
+                                    <span id="proposal-framework" class="font-bold text-slate-900">MSA RAIL, Common Sense Media</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <button onclick="sendPDRequest()" class="w-full bg-slate-900 hover:bg-accent-charcoal text-white py-4 rounded-xl text-sm font-bold tracking-wide transition-all shadow-md flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-paper-plane"></i> Email Workshop Proposal
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Timeline & Accreditations -->
+    <section id="achievements" class="no-print py-24 px-6 bg-stone-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-800 text-xs font-bold uppercase tracking-widest">A Proven Record of Trust</span>
+                <h3 class="text-3xl font-bold text-slate-900 tracking-tight mt-2 serif-title">Accreditations & Scholar Milestones</h3>
+            </div>
+
+            <!-- Credentials row -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="bg-white p-6 rounded-2xl border border-stone-200 flex flex-col justify-between">
+                    <div class="h-10 w-10 bg-blue-50 text-blue-800 rounded-lg flex items-center justify-center mb-4 text-lg">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-slate-900">Google Trainer</h4>
+                        <p class="text-xs text-stone-500 mt-1">L1, L2, Workspace Admin & Certified Educator Champion</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-stone-200 flex flex-col justify-between">
+                    <div class="h-10 w-10 bg-green-50 text-brand-800 rounded-lg flex items-center justify-center mb-4 text-lg">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-slate-900">SSEC Collaborator</h4>
+                        <p class="text-xs text-stone-500 mt-1">Multi-year curriculum contributor, NESST Teacher Ambassador</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-stone-200 flex flex-col justify-between">
+                    <div class="h-10 w-10 bg-amber-50 text-amber-800 rounded-lg flex items-center justify-center mb-4 text-lg">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-slate-900">Gemini Certified</h4>
+                        <p class="text-xs text-stone-500 mt-1">Google-invited administrator executing generative AI pathways</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-stone-200 flex flex-col justify-between">
+                    <div class="h-10 w-10 bg-purple-50 text-purple-800 rounded-lg flex items-center justify-center mb-4 text-lg">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-slate-900">Diocesan Prep</h4>
+                        <p class="text-xs text-stone-500 mt-1">A.R.I.S.E. South Jersey Catholic Schools Leadership Initiative</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed timeline of milestones -->
+            <div class="bg-white rounded-3xl border border-stone-200 p-8 lg:p-12 shadow-sm">
+                <h4 class="text-xl font-bold text-slate-900 mb-8 border-b border-stone-100 pb-4 serif-title">Strategic Journey</h4>
+                <div class="space-y-10 relative before:absolute before:inset-0 before:left-3.5 before:h-full before:w-0.5 before:bg-stone-100">
+                    
+                    <div class="flex gap-6 relative">
+                        <div class="h-7 w-7 rounded-full bg-brand-800 border-4 border-white shadow-md z-10 flex items-center justify-center mt-1"></div>
+                        <div>
+                            <span class="text-xs font-bold text-brand-800 uppercase tracking-wide">Nov 2026 - Present</span>
+                            <h5 class="font-bold text-slate-900 mt-1">Appointed Accreditation Commissioner — MSA-CESS</h5>
+                            <p class="text-slate-500 text-xs sm:text-sm mt-1 max-w-3xl leading-relaxed">
+                                Formally appointed as an Accreditation Commissioner to the Middle States Association Commissions on Elementary and Secondary Schools. Exercising board-level peer-review decisions, review evaluation standards, and lead organizational compliance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 relative">
+                        <div class="h-7 w-7 rounded-full bg-slate-800 border-4 border-white shadow-md z-10 flex items-center justify-center mt-1"></div>
+                        <div>
+                            <span class="text-xs font-bold text-slate-600 uppercase tracking-wide">June 2026</span>
+                            <h5 class="font-bold text-slate-900 mt-1">Google for Education GEG AI Series</h5>
+                            <p class="text-slate-500 text-xs sm:text-sm mt-1 max-w-3xl leading-relaxed">
+                                Selected by Google for Education (Mountain View, CA) to map school-wide generative AI curriculum models and deliver teacher coaching plans for regional environments.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 relative">
+                        <div class="h-7 w-7 rounded-full bg-slate-800 border-4 border-white shadow-md z-10 flex items-center justify-center mt-1"></div>
+                        <div>
+                            <span class="text-xs font-bold text-slate-600 uppercase tracking-wide">April 2026</span>
+                            <h5 class="font-bold text-slate-900 mt-1">Published NARST Research Contributor (Seattle, WA)</h5>
+                            <p class="text-slate-500 text-xs sm:text-sm mt-1 max-w-3xl leading-relaxed">
+                                Published alongside academic partners investigating ontoepistemologies in college-level socioscientific issues at the prestigious National Association for Research in Science Teaching.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 relative">
+                        <div class="h-7 w-7 rounded-full bg-slate-800 border-4 border-white shadow-md z-10 flex items-center justify-center mt-1"></div>
+                        <div>
+                            <span class="text-xs font-bold text-slate-600 uppercase tracking-wide">January 2026</span>
+                            <h5 class="font-bold text-slate-900 mt-1">Fellowship Scholar — Vatican Observatory Foundation</h5>
+                            <p class="text-slate-500 text-xs sm:text-sm mt-1 max-w-3xl leading-relaxed">
+                                Participated in the Astronomy for Catholics in Ministry and Education (ACME) program in Arizona, focusing on the pedagogical links between theology and observational science.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRINT ONLY RESUME / CV VIEW -->
+    <div class="print-only hidden p-10 bg-white text-black max-w-4xl mx-auto space-y-8">
+        <div class="border-b-2 border-black pb-6">
+            <h1 class="text-3xl font-extrabold uppercase">Jennifer C. Marisi</h1>
+            <p class="text-sm font-semibold tracking-wider text-slate-700 mt-1 uppercase">EdTech Leader • STEM Education Innovator • MSA Commissioner</p>
+            <div class="mt-4 flex flex-wrap gap-x-6 gap-y-1 text-xs text-slate-600">
+                <span><i class="fa-regular fa-envelope"></i> jencmarisi@gmail.com</span>
+                <span><i class="fa-solid fa-phone"></i> 908-461-1467</span>
+                <span><i class="fa-solid fa-location-dot"></i> Haddon Heights, NJ</span>
+                <span><i class="fa-solid fa-globe"></i> jencmarisi.github.io</span>
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <h3 class="text-lg font-bold border-b border-black uppercase tracking-wider">Leadership Profile</h3>
+            <p class="text-xs leading-relaxed text-stone-800">
+                Jen Marisi is an educator, researcher, and STEM leader with more than 20 years of experience building programs, partnerships, and scholarship at the crossroads of science and learning. Designs human-centered, empathy-driven STEM curricula bridging cutting-edge scientific research with real-world social impact. A three-time competitive grant recipient, an MSA-CESS Accreditation Commissioner, and Google-invited AI educator.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6">
+            <div>
+                <h3 class="text-sm font-bold border-b border-black uppercase mb-3">Key Competencies</h3>
+                <ul class="text-[11px] space-y-1 list-disc pl-4 text-stone-800">
+                    <li>Strategic EdTech Leadership & Systems Scale</li>
+                    <li>AI Governance Frameworks & Ethics (RAIL)</li>
+                    <li>MSA-CESS Standards & Governance Accreditation</li>
+                    <li>Global Curricula Design (Smithsonian SSEC)</li>
+                    <li>Google Workspace School Administration</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm font-bold border-b border-black uppercase mb-3">Major Achievements</h3>
+                <ul class="text-[11px] space-y-1 list-disc pl-4 text-stone-800">
+                    <li><strong>Accreditation Commissioner</strong> (Appointed Nov 2026)</li>
+                    <li><strong>Smithsonian SSEC Author</strong> (Water! Guide 2026)</li>
+                    <li><strong>NARST Research Contributor</strong> (Paper Published Apr 2026)</li>
+                    <li><strong>Google GEG AI Series</strong> Invitee (Mountain View, June 2026)</li>
+                    <li><strong>Vatican Observatory Fellow</strong> (ACME Arizona, Jan 2026)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <h3 class="text-lg font-bold border-b border-black uppercase tracking-wider">Professional Experience</h3>
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between font-bold text-xs">
+                        <span>Accreditation Commissioner | MSA-CESS</span>
+                        <span>Nov 2026 – Present</span>
+                    </div>
+                    <p class="text-[11px] text-stone-700 mt-1">Steward of continuous school improvement and standards compliance. Review accrediting board reports and evaluate standard parameters for regional secondary institutions.</p>
+                </div>
+                <div>
+                    <div class="flex justify-between font-bold text-xs">
+                        <span>Technology & STEM Coordinator | St. Peter School</span>
+                        <span>2017 – Present</span>
+                    </div>
+                    <p class="text-[11px] text-stone-700 mt-1">Built comprehensive Pre-K to 8th grade STEM curricula for 200+ students. Lead implementation of the Middle States RAIL (Responsible AI in Learning) endorsement. Secured eCLOSE Institute Class2Lab grants for biomedical student testing.</p>
+                </div>
+                <div>
+                    <div class="flex justify-between font-bold text-xs">
+                        <span>Director of STEM | JCC Medford Summer Camps</span>
+                        <span>Summers 2005 – Present</span>
+                    </div>
+                    <p class="text-[11px] text-stone-700 mt-1">Oversee summer-long STEM ecosystems serving 1,600+ youth campers annually. Design curricula, manage teams of 10+ instructors, and integrate adults with special needs in supportive instructional positions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <h3 class="text-lg font-bold border-b border-black uppercase tracking-wider">Education & Academic Publications</h3>
+            <div class="text-xs space-y-2">
+                <div class="flex justify-between">
+                    <span><strong>M.Ed. in Applied Technology in Education</strong> | Wilmington University</span>
+                    <span>2008</span>
+                </div>
+                <div class="flex justify-between">
+                    <span><strong>B.A. in Education & Social Studies</strong> | Caldwell University</span>
+                    <span>2003</span>
+                </div>
+                <p class="text-[10px] text-stone-600 mt-2 italic">
+                    NARST 2026 Conference Paper: "Ontoepistemologies in college-level socioscientific issue learning" • Smithsonian SSEC Water! Guide (Oct 2026)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple, Clean Footer Section -->
+    <footer id="contact" class="no-print bg-stone-900 text-white pt-24 pb-12 px-6 mt-auto">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+                <div class="md:col-span-5 space-y-4">
+                    <h3 class="text-2xl font-extrabold tracking-tight serif-title">Let's build something exceptional.</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        Need a speaker, curriculum design consultant, accredited compliance reviewer, or system auditor? Connect to map out customized opportunities for your community.
+                    </p>
+                    <div class="mt-8 flex gap-4">
+                        <a href="https://twitter.com/JenMarisi" target="_blank" class="h-10 w-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center text-stone-300 transition-all"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UCq7K6d0en7Un9-V-ED5yHkQ" target="_blank" class="h-10 w-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center text-stone-300 transition-all"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-7 grid sm:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xs font-bold text-accent-gold uppercase tracking-widest mb-4">Contact Details</h4>
+                        <ul class="space-y-3 text-sm text-stone-300">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-regular fa-envelope text-accent-gold"></i>
+                                <a href="mailto:jencmarisi@gmail.com" class="hover:text-white transition-all">jencmarisi@gmail.com</a>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-phone text-accent-gold"></i>
+                                <span>908-461-1467</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-location-dot text-accent-gold"></i>
+                                <span>Haddon Heights, New Jersey</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs font-bold text-accent-gold uppercase tracking-widest mb-4">Core Associations</h4>
+                        <ul class="space-y-2 text-xs text-stone-400">
+                            <li>Middle States Commission (CESS Member)</li>
+                            <li>Smithsonian Science Education Center (SSEC)</li>
+                            <li>Vatican Observatory Foundation Fellow (ACME)</li>
+                            <li>St. Peter School Merchantville</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+                <p>&copy; 2026 Jennifer C. Marisi. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <span>#CreateAndMakePossible</span>
+                    <span>#StemOnAMission</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Script Mechanics -->
+    <script>
+        // Hero Switcher Tabs State
+        function switchHeroTab(tabId) {
+            // Reset active style on buttons
+            document.querySelectorAll('.hero-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-800', 'text-white');
+                btn.classList.add('text-slate-300', 'hover:text-white');
+            });
+            // Apply active styles to correct button
+            const activeBtn = document.getElementById(`hero-btn-${tabId}`);
+            activeBtn.classList.remove('text-slate-300', 'hover:text-white');
+            activeBtn.classList.add('bg-brand-800', 'text-white');
+
+            // Hide panels
+            document.querySelectorAll('.hero-content-panel').forEach(panel => {
+                panel.classList.add('hidden');
+            });
+            // Show correct panel
+            const activePanel = document.getElementById(`hero-content-${tabId}`);
+            activePanel.classList.remove('hidden');
+        }
+
+        // Project Filter Logic
+        function filterProjects(category) {
+            // Update filter button styling
+            document.querySelectorAll('.project-filter-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-800', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-600', 'border', 'border-stone-200', 'hover:bg-stone-50');
+            });
+
+            // Set clicked button to active
+            const activeBtn = document.getElementById(`filter-btn-${category}`) || document.getElementById(`project-filter-btn-${category}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-white', 'text-slate-600', 'border', 'border-stone-200', 'hover:bg-stone-50');
+                activeBtn.classList.add('bg-brand-800', 'text-white');
+            }
+
+            // Show/hide cards
+            document.querySelectorAll('.project-card').forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.classList.remove('hidden');
+                    card.classList.add('block');
+                } else {
+                    card.classList.remove('block');
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Dynamic Professional Development Proposal Tool
+        let currentLength = 'half-day';
+
+        function setLength(length) {
+            currentLength = length;
+            document.querySelectorAll('.length-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-800', 'text-white');
+                btn.classList.add('bg-white', 'border', 'border-stone-200', 'hover:bg-stone-100');
+            });
+
+            let btnId = 'length-btn-half';
+            if (length === 'full-day') btnId = 'length-btn-full';
+            if (length === 'multi-day') btnId = 'length-btn-multi';
+
+            const activeBtn = document.getElementById(btnId);
+            activeBtn.classList.remove('bg-white', 'border', 'border-stone-200', 'hover:bg-stone-100');
+            activeBtn.classList.add('bg-brand-800', 'text-white');
+
+            generatePDProposal();
+        }
+
+        const pdData = {
+            'ai-literacy': {
+                title: "Responsible Generative AI & Digital Literacy in School Environments",
+                desc: "Develop comprehensive administrative policies (RAIL frameworks), manage security/safety standards, and train educators to construct student-friendly, ethical classrooms.",
+                framework: "MSA RAIL Framework, Common Sense Media"
+            },
+            'samr-model': {
+                title: "Elevating Classroom Content via the SAMR Integration Model",
+                desc: "Equip teachers to redefine established lesson plans using modern digital integration. Practical exercises across 5 major core subjects to move beyond basic digital replacement.",
+                framework: "SAMR, Google Workspace Tools"
+            },
+            'google-bootcamp': {
+                title: "Google Workspace for Education Level 1 & 2 Bootcamps",
+                desc: "A hands-on preparation marathon covering high-level administrative functions, document suites, student organization channels, and core ecosystem optimization.",
+                framework: "Google Trainer Curriculum"
+            },
+            'science-global': {
+                title: "Emergent Socio-Scientific Thinking: Global Science Challenges",
+                desc: "Leverage global co-creation modules from the Smithsonian's Science Education Center. Move beyond static textbooks to teach active climate, water, and engineering empathy challenges.",
+                framework: "Smithsonian SSEC, NESST Pathways"
+            },
+            'digital-safety': {
+                title: "Digital Navigators: Parental Controls & Online Environments",
+                desc: "Engage families with high-impact tactics to preserve safety at home. Hands-on walk-throughs covering Google Family Link, secure filtering tools, and common digital citizen norms.",
+                framework: "Digital Navigator Program, Google Family Link"
+            }
+        };
+
+        function generatePDProposal() {
+            const focus = document.getElementById('pd-focus').value;
+            const audience = document.getElementById('pd-audience').value;
+            
+            const targetText = {
+                faculty: "Faculty & Classroom Educators",
+                parents: "Parents & Community Families",
+                leadership: "School Boards & Administrators"
+            };
+
+            const durationText = {
+                'half-day': "Half Day Interactive Session (3 hrs)",
+                'full-day': "Full Day Intensive Bootcamp (6 hrs)",
+                'multi-day': "Multi-day / Progressive Cohort Series"
+            };
+
+            const details = pdData[focus];
+            document.getElementById('proposal-title').innerText = details.title;
+            document.getElementById('proposal-desc').innerText = details.desc;
+            document.getElementById('proposal-target').innerText = targetText[audience];
+            document.getElementById('proposal-duration').innerText = durationText[currentLength];
+            document.getElementById('proposal-framework').innerText = details.framework;
+        }
+
+        function sendPDRequest() {
+            const title = document.getElementById('proposal-title').innerText;
+            const target = document.getElementById('proposal-target').innerText;
+            const duration = document.getElementById('proposal-duration').innerText;
+            const body = encodeURIComponent(`Hi Jen,\n\nI am interested in exploring this custom workshop for my school system:\n\nWorkshop: ${title}\nTarget Audience: ${target}\nFormat: ${duration}\n\nLet's discuss dates and tailoring Options!`);
+            window.location.href = `mailto:jencmarisi@gmail.com?subject=Strategic PD Proposal: ${encodeURIComponent(title)}&body=${body}`;
+        }
+
+        // Initialize Live Proposal Output on Load
+        window.onload = function() {
+            generatePDProposal();
+        };
+    </script>
+</body>
+</html>
